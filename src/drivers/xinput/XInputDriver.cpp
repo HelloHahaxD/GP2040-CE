@@ -195,7 +195,7 @@ void XInputDriver::process(Gamepad * gamepad, uint8_t * outBuffer) {
 
 	xinputReport.lx = static_cast<int16_t>(gamepad->state.lx) + INT16_MIN;
 	xinputReport.ly = static_cast<int16_t>(~gamepad->state.ly) + INT16_MIN;
-	xinputReport.rx = static_cast<int16_t>(gamepad->state.rx) + INT16_MIN;
+	xinputReport.rx = INT16_MIN;
 	xinputReport.ry = static_cast<int16_t>(~gamepad->state.ry) + INT16_MIN;
 
 	if (gamepad->hasAnalogTriggers)
