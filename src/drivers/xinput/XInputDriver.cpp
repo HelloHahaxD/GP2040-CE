@@ -129,7 +129,7 @@ void XInputDriver::initialize() {
 		.rt = 0,
 		.lx = GAMEPAD_JOYSTICK_MID,
 		.ly = GAMEPAD_JOYSTICK_MID,
-		.rx = GAMEPAD_JOYSTICK_MID,
+		.rx = GAMEPAD_JOYSTICK_MIN,
 		.ry = GAMEPAD_JOYSTICK_MID,
 		._reserved = { },
 	};
